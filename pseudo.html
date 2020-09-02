@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pseudo Element</title>
+</head>
+<body>
+	<p>
+		This is generic content.
+	</p>
+	<!-- <img src="https://unsplash.it/500/500" alt=""> -->
+</body>
+</html>
+
+
+<style>
+	body{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 5rem;
+	}
+	p::before{
+		content: 'hello';
+		background: red;
+		font-size: 20px;
+		color: #fff;
+		font-weight: 900;
+/*		width: 10px;
+		height: 10px;*/
+	}
+	p::after{
+		content: 'goodbye';
+		background: red;
+		color: #fff;
+		display: block;
+		font-weight: 900;
+		font-size: 20px
+	}
+</style>
